@@ -26,6 +26,8 @@ teiresias.pl
 
 
     note / hints / tips
+TEIRESIAS and NR-grep are OK on Ubuntu 64bit - otherwise download/compile from original sources
+ - be aware though that the latest TEIRESIAS version gives unexpected results.
 When possible, sequences in results table are uppercased with the pattern that clustered them.
 You can find the same sequence in different clusters (i.e. ~fuzzy clustering)
  - these are used as linkers for higher-level clustering (L1, L2, etc),
