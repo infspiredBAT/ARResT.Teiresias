@@ -3,8 +3,8 @@ discovering new subsets of stereotyped antigen receptor sequences
 
 </br>
 citation: http://www.ncbi.nlm.nih.gov/pubmed/19759557</br>
-code: we provide Perl scripts,/<br>
-IBM's TEIRESIAS (old version) and NR-grep by G. Navarro for __Ubuntu 64bit__,</br>
+code: we provide Perl scripts,</br>
+IBM's TEIRESIAS (old version) and NR-grep by G. Navarro for Ubuntu 64bit,</br>
 and demo data</br>
 usage:
 <pre>
@@ -27,10 +27,10 @@ other (optional) arguments - defaults are current standards for CLL (PMID:224157
 
 
 notes / hints / tips:
-TEIRESIAS and NR-grep are OK on Ubuntu 64bit, otherwise download/compile from original sources
- (be aware though that the latest TEIRESIAS version (0.9.1, 3/13/2014) gives unexpected results).
-When possible, sequences in results table are uppercased with the pattern that clustered them.
-You can find the same sequence in different clusters (i.e. ~fuzzy clustering);
- these are used as linkers for higher-level clustering (L1, L2, etc),
- where linkage can actually be very loose so be careful with interpretation.
+> TEIRESIAS and NR-grep are OK on Ubuntu 64bit, otherwise download/compile from original sources
+(be aware though that the latest TEIRESIAS version (0.9.1, 3/13/2014) gives unexpected results).
+> When possible, sequences in results table are uppercased with the pattern that clustered them.
+> You can find the same sequence in different clusters (i.e. ~fuzzy clustering);
+these are used as linkers for higher-level clustering (L1, L2, etc),
+where linkage can actually be very loose so be careful with interpretation.
 </pre>
