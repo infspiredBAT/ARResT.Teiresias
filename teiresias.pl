@@ -32,18 +32,40 @@ teiresias.pl
 --debug     -> do not erase intermediate files
 
 
-    note / hints / tips
-TEIRESIAS and NR-grep are OK on Ubuntu 64bit - otherwise download/compile from original sources
- - be aware though that the latest TEIRESIAS version gives unexpected results.
+    notes / hints / tips
+TEIRESIAS and NR-grep are OK on Ubuntu 64bit, otherwise download/compile from original sources
+ - be aware though that the latest TEIRESIAS version (0.9.1, 3/13/2014) gives unexpected results.
 When possible, sequences in results table are uppercased with the pattern that clustered them.
 You can find the same sequence in different clusters (i.e. ~fuzzy clustering)
  - these are used as linkers for higher-level clustering (L1, L2, etc),
    where linkage can actually be very loose so be careful with interpretation.
+   
 );
 
 use Cwd 'abs_path';
 $path = (split "/teiresias.pl",abs_path($0))[0];
 $methoddir = $path;
+
+
+#print "(i) checking executables\n";
+
+    $tool = 'teiresias'; $cmdoutkey = 'PatternLen'; testtool();    
+    $tool = 'nrgrep';    $cmdoutkey = 'pattern';    testtool();
+    sub testtool {
+        if (-e "$methoddir/$tool") {
+            unless (-x "$methoddir/$tool") {
+                print "(!) need to 'chmod +x' $tool\n";
+                `chmod u+x $methoddir/$tool`;
+                unless (-x "$methoddir/$tool") { print "(!) cannot make '$tool' executable - exiting\n"; exit;
+                } else {
+                    $cmdout = `$methoddir/$tool 2>&1`;
+                    unless ($cmdout =~ /$cmdoutkey/) { print "(!) cannot execute '$tool', was compiled on Ubuntu 64bit - exiting\n"; exit; }
+                }
+                print "\n";
+            }
+        } else { print "(!) cannot find '$tool' in $methoddir/ - exiting\n"; exit; }
+    }
+
 
 # arg 0 : aa to ignore
 # arg 1 : IBM's TEIRESIAS' l
