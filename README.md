@@ -8,11 +8,11 @@ usage:
 <pre>
 teiresias.pl
 
---in		    -> table: tab-delimited, NO header line, Unix ASCII - see demo.table
-                 1st column:  required!  label, make sure they're unique
-                 2nd column:  required!  amino acid junction sequence, with anchors
-                 3rd column:  optional   IMGT-formatted V gene (and allele)
-                 4th column:  optional   annotation
+--in        -> table: tab-delimited, NO header line, Unix ASCII - see demo.table
+ 1st column:  required!  label, make sure they're unique
+ 2nd column:  required!  amino acid junction sequence, with anchors
+ 3rd column:  optional   IMGT-formatted V gene (and allele)
+ 4th column:  optional   annotation
 
 other (optional) arguments - defaults are current standards for CLL (PMID:22415752)
 --ide       -> minimum identity [0-1], default: 0.5
@@ -25,10 +25,8 @@ other (optional) arguments - defaults are current standards for CLL (PMID:224157
 --debug     -> do not erase intermediate files
 
 notes / hints / tips
-TEIRESIAS and NR-grep are OK on Ubuntu 64bit, otherwise download/compile from original sources
- - be aware though that the latest TEIRESIAS version (0.9.1, 3/13/2014) gives unexpected results.
+TEIRESIAS and NR-grep are OK on Ubuntu 64bit, otherwise download/compile from original sources (be aware though that the latest TEIRESIAS version (0.9.1, 3/13/2014) gives unexpected results).
 When possible, sequences in results table are uppercased with the pattern that clustered them.
-You can find the same sequence in different clusters (i.e. ~fuzzy clustering)
- - these are used as linkers for higher-level clustering (L1, L2, etc),
-   where linkage can actually be very loose so be careful with interpretation.
+You can find the same sequence in different clusters (i.e. ~fuzzy clustering) - these are used as linkers for higher-level clustering (L1, L2, etc), where linkage can actually be very loose so be careful with interpretation.
+
 </pre>
