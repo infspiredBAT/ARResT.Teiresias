@@ -26,11 +26,11 @@ other (optional) arguments - defaults are current standards for CLL (PMID:224157
 --debug     -> do not erase intermediate files
 
 
-notes / hints / tips:
-> TEIRESIAS and NR-grep are OK on Ubuntu 64bit, otherwise download/compile from original sources
+notes / hints / tips
+TEIRESIAS and NR-grep are OK on Ubuntu 64bit, otherwise download/compile from original sources
 (be aware though that the latest TEIRESIAS version (0.9.1, 3/13/2014) gives unexpected results).
-> When possible, sequences in results table are uppercased with the pattern that clustered them.
-> You can find the same sequence in different clusters (i.e. ~fuzzy clustering);
+When possible, sequences in results table are uppercased with the pattern that clustered them.
+You can find the same sequence in different clusters (i.e. ~fuzzy clustering);
 these are used as linkers for higher-level clustering (L1, L2, etc),
 where linkage can actually be very loose so be careful with interpretation.
 </pre>
