@@ -2,6 +2,7 @@
 discovering new subsets of stereotyped antigen receptor sequences
 
 </br>
+lab home: http://bat.infspire.org</br>
 citation: http://www.ncbi.nlm.nih.gov/pubmed/19759557</br>
 code: we provide Perl scripts,</br>
 IBM's TEIRESIAS (old version) and NR-grep by G. Navarro for Ubuntu 64bit,</br>
