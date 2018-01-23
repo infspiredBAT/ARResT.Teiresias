@@ -34,3 +34,5 @@ You can find the same sequence in different clusters (i.e. ~fuzzy clustering);
 these are used as linkers for higher-level clustering (L1, L2, etc),
 where linkage can actually be very loose so be careful with interpretation.
 </pre>
+
+###### supported by Ministry of Health of the Czech Republic grant nr. 16-34272A
