@@ -1,4 +1,4 @@
-# ARResT.TEIRESIAS
+# ARResT.Teiresias
 discovering new subsets of stereotyped antigen receptor sequences
 
 </br>
